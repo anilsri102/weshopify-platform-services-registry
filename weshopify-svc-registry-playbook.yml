@@ -18,5 +18,8 @@
     - name: download the artifact from artifactory
       shell: chmod 777 ./app-dir/jfrog.sh && sh ./app-dir/jfrog.sh
 
+    - name: change the permission of dockerfile
+      shell: chmod 777 ./app-dir/Dockerfile   
+
     - name: build the docker image
       shell: docker build -f ./app-dir/Dockerfile --tag weshopify-service-registry-img .  
