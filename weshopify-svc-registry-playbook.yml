@@ -22,4 +22,4 @@
       shell: chmod 777 ./app-dir/Dockerfile   
 
     - name: build the docker image
-      shell: docker build -f ./app-dir/Dockerfile --tag weshopify-service-registry-img .  
+      shell: echo admin | sudo -S docker build -f ./app-dir/Dockerfile --tag weshopify-service-registry-img .  
