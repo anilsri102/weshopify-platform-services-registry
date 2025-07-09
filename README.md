@@ -1,0 +1,1 @@
+# weshopify-platform-services-registry
