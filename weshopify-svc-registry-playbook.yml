@@ -25,10 +25,10 @@
       shell: echo admin | sudo -S docker build -f ./app-dir/Dockerfile --tag agulimi/weshopify-service-registry-img .  
 
     - name: push the docker image to dockerhub
-      shell: echo 'dckr_pat__ltCzoTBwc5cWLXTTas576QSPb8' | sudo -S docker push agulimi/weshopify-service-registry-img
+      shell: echo admin | sudo -S docker push agulimi/weshopify-service-registry-img
 
     - name: After the push remove the image locally  
-      shell: echo 'dckr_pat__ltCzoTBwc5cWLXTTas576QSPb8' | sudo -S docker rmi agulimi/weshopify-service-registry-img 
+      shell: echo admin | sudo -S docker rmi agulimi/weshopify-service-registry-img 
 
     - name: remove the app-dir
       shell: rm -rf app-dir  
