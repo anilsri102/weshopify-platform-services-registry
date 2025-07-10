@@ -3,7 +3,7 @@ spring:
     name: weshopify-platform-service-registry
 
 server:
-  port: 5011
+  port: 8761
   
 eureka:
   client:
