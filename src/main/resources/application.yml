@@ -1,6 +1,6 @@
 spring:
   application:
-    name: weshopify-platform-services-registry
+    name: weshopify-platform-service-registry
 
 server:
   port: 5011
